@@ -1,0 +1,90 @@
+As a Cloud Engineer, you have been consulted to set up the infrastructure servers of a small business. 
+
+Create the following users, and assign them to groups
+Create the Company directories and assign the right access to the right groups.
+ 
+
+Employees:
+
+Andrew, System Administrator
+Julius, Legal
+Chizi, Human Resource Manager
+Jeniffer, Sales Manager
+Adeola, Business Strategist
+Bach, CEO
+Gozie, IT intern
+Ogochukwu, Finance Manager 
+ 
+
+ 
+
+Company Documents (Directories):
+
+Finance Budgets
+Contract Documents
+Business Projections
+Business Models
+Employee Data
+Company Vision and Mission Statement
+Server Configuration Script
+
+
+SUBMISSION: Write the steps you took to execute the task, and the commands used for each step. 
+Create a github repo and put the submission in the Readme.md
+Include screenshots of your users and directories.
+
+#Update ubuntu
+Sudo Apt Update
+
+#create employees
+gentent group
+
+#Displays all users
+cat /etc/passwd
+
+#creating users
+Sudo adduser username]
+
+#creating group
+sudo addgroup group_name
+
+#Assigning users to group
+
+
+2. 
+#create parent directory called company
+sudo mkdir company
+
+#Go to the main directory
+cd ..
+
+#go into the company parent directory
+cd company
+
+#Create the office directories
+sudo mkdir directories
+
+#Assign right group ownership
+sudo chown :finance finance_budgets
+sudo chown :legal contract_documents
+sudo chown :hr employee_data
+sudo chown :strategy business_models
+sudo chown :strategy business_projections
+sudo chown :admin server_configuration_script
+sudo chown :ceo company_vision_and_mission_statement
+
+#Assign the right ownership
+
+olami@Olamide:/company$ sudo chmod 770 finance_budgets/
+olami@Olamide:/company$ sudo chmod 770 contract_documents/
+olami@Olamide:/company$ sudo chmod 775 employee_data/
+olami@Olamide:/company$ sudo chmod 644 business_projectionss/
+#olami@Olamide:/company$ sudo chmod 666 comppany_vision_and_mission_statement/
+olami@Olamide:/company$
+
+
+
+
+ 
+
+ 
